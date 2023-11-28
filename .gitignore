@@ -1,0 +1,8 @@
+data
+wandb
+results
+*.pyc
+__pycache__
+tmp*
+pymp*
+*.log

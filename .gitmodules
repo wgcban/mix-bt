@@ -1,0 +1,3 @@
+[submodule "ssl-sota"]
+	path = ssl-sota
+	url = https://github.com/wgcban/ssl-sota.git
