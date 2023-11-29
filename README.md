@@ -4,9 +4,9 @@
 
 ![mask-vis-1](mix-bt.jpg)
 
-$C^{MA} &= (Z^M)^TZ^A$
+$C^{MA} = (Z^M)^TZ^A$
 
-$C^{MB} &= (Z^M)^TZ^B$
+$C^{MB} = (Z^M)^TZ^B$
 
 $C^{MA}_{gt} = \lambda (Z^A)^TZ^A + (1-\lambda)\mathtt{Shuffle}^*(Z^B)^TZ^A$
 
