@@ -21,7 +21,7 @@ conda install pytorch torchvision cudatoolkit=10.0 -c pytorch
 - clone this repo: 
 With version 2.13 of Git and later,
 ```
-git clone https://github.com/wgcban/ssl-aug.git
+git clone https://github.com/wgcban/mix-bt.git
 ```
 
 - install the conda environment `ssl-aug`:
@@ -39,21 +39,21 @@ conda env create -f environment.yml
 - [Barlow Twins](https://arxiv.org/abs/2103.03230): infomax for SSL
 - Mixed Barlow Twins (ours): infomax + mixup samples for SSL
 
-### Pre-training and k-NN evaluation results with Mixed Barlow Twins (is_mixup = True) / Barlow Twins (is_mixup = False)
+### Pre-Training with Mixed Barlow Twins
 Train and k-NN Evaluation using Mixed Barlow Twins on `Cifar10`, `Cifar100`, `TinyImageNet`, and `STL-10`:
 On `Cifar10`, `Cifar100`, `tinyimagenet`, `stl-10`, `ImageNet`:
 ```
 sh scripts-pretrain/[dataset].sh
 ```
 
-### Linear Evaluation with Mixed Barlow Twins
+### Linear Evaluation of Pre-trained Models
 **Make sure to specify `model_path` argument correctly.**
 On `Cifar10`, `Cifar100`, `tinyimagenet`, `stl-10`, and `ImageNet`:
 ```
 sh scripts-linear/[dataset].sh
 ```
 
-# Pre-trained model checkpoints
+# Pre-trained Checkpoints
 Download the pre-trained models and store them in `checkpoints`:
 ## ResNet-18
 | Dataset        |  d   | Lambda_BT | Lambda_Reg | Path to Pretrained Model | KNN Acc. | Linear Acc. |
