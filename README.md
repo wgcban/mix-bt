@@ -53,7 +53,7 @@ On `Cifar10`, `Cifar100`, `tinyimagenet`, `stl-10`, and `ImageNet`:
 sh scripts-linear/[dataset].sh
 ```
 
-### Transfer of Pre-trained Models
+### Transfer Learning of Pre-trained Models
 **Make sure to specify `model_path` argument correctly.**
 From `Cifar10`, `Cifar100`, and `stl-10` to fine-grained classification datasets:
 ```
