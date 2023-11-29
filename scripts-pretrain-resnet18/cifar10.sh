@@ -1,5 +1,6 @@
 #!/bin/bash
-gpu=7
+# default: https://wandb.ai/cha-yas/Barlow-Twins-MixUp-cifar10-resnet18/runs/4wdhbpcf/overview?workspace=user-wgcban
+gpu=0
 dataset=cifar10
 arch=resnet18
 feature_dim=1024
@@ -9,10 +10,7 @@ epochs=2000
 lr=0.01
 lr_shed=cosine # step, cosine
 mixup_loss_scale=4.0 # scale w.r.t. lambda: 0.0078125 * 5 = 0.0390625
-
-lmbda=$(echo "scale=7; 1 / ${feature_dim}" | bc)
 lmbda=0.0078125
-echo ${lmbda}
 
 timestamp=$(date +"%Y%m%d%H%M%S")
 session_name="python_session_$timestamp"
