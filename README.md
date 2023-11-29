@@ -54,7 +54,7 @@ sh scripts-linear/[dataset].sh
 ```
 
 # Pre-Trained Checkpoints
-Download the pre-trained models and store them in `checkpoints/`:
+Download the pre-trained models from [GitHub (Releases v1.0.0)](https://github.com/wgcban/mix-bt/releases/tag/v1.0.0) and store them in `checkpoints/`:
 ## ResNet-18
 | Dataset        |  d   | Lambda_BT | Lambda_Reg | Path to Pretrained Model | KNN Acc. | Linear Acc. |
 | ----------     | ---  | ---------- | ---------- | ------------------------ | -------- | ----------- |
