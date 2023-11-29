@@ -53,8 +53,8 @@ On `Cifar10`, `Cifar100`, `tinyimagenet`, `stl-10`, and `ImageNet`:
 sh scripts-linear/[dataset].sh
 ```
 
-# Pre-trained Checkpoints
-Download the pre-trained models and store them in `checkpoints`:
+# Pre-Trained Checkpoints
+Download the pre-trained models and store them in `checkpoints/`:
 ## ResNet-18
 | Dataset        |  d   | Lambda_BT | Lambda_Reg | Path to Pretrained Model | KNN Acc. | Linear Acc. |
 | ----------     | ---  | ---------- | ---------- | ------------------------ | -------- | ----------- |
