@@ -53,6 +53,13 @@ On `Cifar10`, `Cifar100`, `tinyimagenet`, `stl-10`, and `ImageNet`:
 sh scripts-linear/[dataset].sh
 ```
 
+### Transfer of Pre-trained Models
+**Make sure to specify `model_path` argument correctly.**
+From `Cifar10`, `Cifar100`, and `stl-10` to fine-grained classification datasets:
+```
+sh scripts-transfer-resnet18/[dataset]-to-x.sh
+```
+
 # Pre-Trained Checkpoints
 Download the pre-trained models from [GitHub (Releases v1.0.0)](https://github.com/wgcban/mix-bt/releases/tag/v1.0.0) and store them in `checkpoints/`:
 ## ResNet-18
