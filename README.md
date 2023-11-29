@@ -32,11 +32,11 @@ conda env create -f environment.yml
 ### Supported pre-training datasets
 
 This repository supports the following pre-training datasets:
-- CIFAR-10: https://www.cs.toronto.edu/~kriz/cifar.html
-- CIFAR-100: https://www.cs.toronto.edu/~kriz/cifar.html
-- Tiny-ImageNet: https://github.com/rmccorm4/Tiny-Imagenet-200
-- STL-10: https://cs.stanford.edu/~acoates/stl10/
-- ImageNet: https://www.image-net.org
+- `CIFAR-10`: https://www.cs.toronto.edu/~kriz/cifar.html
+- `CIFAR-100`: https://www.cs.toronto.edu/~kriz/cifar.html
+- `Tiny-ImageNet`: https://github.com/rmccorm4/Tiny-Imagenet-200
+- `STL-10`: https://cs.stanford.edu/~acoates/stl10/
+- `ImageNet`: https://www.image-net.org
 
 `CIFAR-10`, `CIFAR-100`, and `STL-10` datasets are directly available in PyTorch. 
 
