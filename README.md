@@ -1,7 +1,7 @@
 # Mixed Barlow Twins
 [**Guarding Barlow Twins Against Overfitting with Mixed Samples**](https://arxiv.org/pdf/)<br>
 [Wele Gedara Chaminda Bandara](https://www.wgcban.com) (Johns Hopkins University), [Celso M. De Melo](https://celsodemelo.net) (U.S. Army Research Laboratory), and [Vishal M. Patel](https://engineering.jhu.edu/vpatel36/) (Johns Hopkins University) <br>
-
+![mask-vis-1](figs/method.jpeg)
 
 ## Usage
 ### Requirements
