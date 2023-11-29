@@ -8,11 +8,8 @@ batch_size=256
 epochs=2000
 lr=0.01
 lr_shed=cosine #"step", "cosine" # step, cosine
-mixup_loss_scale=4.0 # scale w.r.t. lambda: 0.0078125 * 5 = 0.0390625pochs=2000
-
-lmbda=$(echo "scale=7; 1 / ${feature_dim}" | bc)
-# lmbda=0.0078125 # found that this works better
-echo ${lmbda}
+mixup_loss_scale=2.0 # scale w.r.t. lambda: 0.0078125 * 5 = 0.0390625pochs=2000
+lmbda=0.0078125
 
 timestamp=$(date +"%Y%m%d%H%M%S")
 session_name="python_session_$timestamp"

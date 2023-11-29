@@ -3,7 +3,7 @@ is_mixup=true
 batch_size=1024 #128/gpu works
 lr_w=0.2 #0.2
 lr_b=0.0048 #0.0048
-lambda_mixup=5.0
+lambda_mixup=1.0
 
 
 timestamp=$(date +"%Y%m%d%H%M%S")
