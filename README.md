@@ -14,23 +14,35 @@ Before using this repository, make sure you have the following prerequisites ins
 You can install PyTorch with the following command:
 ```bash
 conda install pytorch torchvision cudatoolkit=10.0 -c pytorch
-
-- clone this repo:
 ```
+
+### Installation
+
+To get started, clone this repository:
+```bash
 git clone https://github.com/wgcban/mix-bt.git
 ```
 
-- install the conda environment `ssl-aug`:
-```
+Next, create the Conda environment named `ssl-aug` by executing the following command:
+```bash
 conda env create -f environment.yml
 ```
 
 ### Supported pre-training datasets
-`CIFAR-10`, `CIFAR-100`, `STL10`, [`Tiny_ImageNet`](https://github.com/rmccorm4/Tiny-Imagenet-200), `STL-10`, and `ImageNet`. We use `CIFAR-10`, `CIFAR-100`, and `STL10` datasets directly available in PyTorch. We pre-process the TinyImageNet accroding to the script given [here](https://gist.github.com/moskomule/2e6a9a463f50447beca4e64ab4699ac4). For ImageNet experiments, we follow the exact steps used in [original Barlow Twins](https://github.com/facebookresearch/barlowtwins) implementation. 
-Download the datasets and place them in 'data'.
+
+This repository supports the following pre-training datasets:
+- CIFAR-10
+- CIFAR-100
+- Tiny-ImageNet: https://github.com/rmccorm4/Tiny-Imagenet-200
+- STL-10
+- ImageNet
+
+CIFAR-10, CIFAR-100, and STL10 datasets are directly available in PyTorch. 
+
+To use TinyImageNet, please follow the preprocessing instructions provided in the TinyImageNet [script](https://gist.github.com/moskomule/2e6a9a463f50447beca4e64ab4699ac4). Download these datasets and place them in the `data` directory.
 
 ### Supported transfer learning datasets:
-Download and place them under their respective paths, e.g., 'data/DTD'.
+You can download and place transfer learning datasets under their respective paths, such as 'data/DTD'. The supported transfer learning datasets include:
 - DTD: https://www.robots.ox.ac.uk/~vgg/data/dtd/ 
 - MNIST
 - FashionMNIST
@@ -40,6 +52,9 @@ Download and place them under their respective paths, e.g., 'data/DTD'.
 - Aircraft: https://www.robots.ox.ac.uk/~vgg/data/fgvc-aircraft/
 
 ### Supported SSL Methods
+
+This repository supports the following Self-Supervised Learning (SSL) methods:
+
 - [SimCLR](https://arxiv.org/abs/2002.05709): contrastive learning for SSL 
 - [BYOL](https://arxiv.org/abs/2006.07733): distilation for SSL
 - [Witening MSE](http://proceedings.mlr.press/v139/ermolov21a/ermolov21a.pdf): infomax for SSL
@@ -47,27 +62,26 @@ Download and place them under their respective paths, e.g., 'data/DTD'.
 - **Mixed Barlow Twins (ours)**: infomax + mixed samples for SSL
 
 ### Pre-Training with Mixed Barlow Twins
-To start pre-training and k-NN Evaluation results for Mixed Barlow Twins on `CIFAR-10`, `CIFAR-100`, `TinyImageNet`, and `STL-10`, please run:
-```
+To start pre-training and obtain k-NN evaluation results for Mixed Barlow Twins on `CIFAR-10`, `CIFAR-100`, `TinyImageNet`, and `STL-10`, please run:
+```bash
 sh scripts-pretrain/[dataset].sh
 ```
 
 ### Linear Evaluation of Pre-trained Models
-**Make sure to specify `model_path` argument correctly in the .sh file.**
-To get linear evaluation results on `CIFAR-10`, `CIFAR-100`, `TinyImageNet`, `STL-10`, and `ImageNet`, please run:
+Before running linear evaluation, ensure that you specify the model_path argument correctly in the corresponding .sh file. To obtain linear evaluation results on `CIFAR-10`, `CIFAR-100`, `TinyImageNet`, `STL-10`, and `ImageNet`, please run:
 ```
 sh scripts-linear/[dataset].sh
 ```
 
 ### Transfer Learning of Pre-trained Models
-**Make sure to specify `model_path` argument correctly.**
-To get transfer learning results from `CIFAR-10`, `CIFAR-100`, and `STL-10` to fine-grained classification datasets, please run:
-```
+To perform transfer learning from pre-trained models on `CIFAR-10`, `CIFAR-100`, and `STL-10` to fine-grained classification datasets, execute the following command, making sure to specify the `model_path` argument correctly:
+```bash
 sh scripts-transfer-resnet18/[dataset]-to-x.sh
 ```
 
 ### Pre-Trained Checkpoints
-Download the pre-trained models from [GitHub (Releases v1.0.0)](https://github.com/wgcban/mix-bt/releases/tag/v1.0.0) and store them in `checkpoints/`:
+Download the pre-trained models from [GitHub (Releases v1.0.0)](https://github.com/wgcban/mix-bt/releases/tag/v1.0.0) and store them in `checkpoints/`. This repository provides pre-trained checkpoints for both ResNet-18 and ResNet-50 architectures.
+
 #### ResNet-18
 | Dataset        |  d   | Lambda_BT | Lambda_Reg | Path to Pretrained Model | KNN Acc. | Linear Acc. |
 | ----------     | ---  | ---------- | ---------- | ------------------------ | -------- | ----------- |
