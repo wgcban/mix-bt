@@ -23,32 +23,31 @@ conda env create -f environment.yml
 ```
 
 ### Supported Datasets
-`Cifar10`, `Cifar100`, `STL10`, [`Tiny_ImageNet`](https://github.com/rmccorm4/Tiny-Imagenet-200), STL-10, and ImageNet. We use `Cifar10`, `Cifar100`, and `STL10` datasets directly available in PyTorch. We pre-process the TinyImageNet accroding to the script given [here](https://gist.github.com/moskomule/2e6a9a463f50447beca4e64ab4699ac4). For ImageNet experiments, we follow the exact steps used in original Barlow Twins implementation.
+`CIFAR-10`, `CIFAR-100`, `STL10`, [`Tiny_ImageNet`](https://github.com/rmccorm4/Tiny-Imagenet-200), `STL-10`, and `ImageNet`. We use `CIFAR-10`, `CIFAR-100`, and `STL10` datasets directly available in PyTorch. We pre-process the TinyImageNet accroding to the script given [here](https://gist.github.com/moskomule/2e6a9a463f50447beca4e64ab4699ac4). For ImageNet experiments, we follow the exact steps used in [original Barlow Twins](https://github.com/facebookresearch/barlowtwins) implementation.
 
-### Supported SOTA methods
+### Supported SSL Methods
 - [SimCLR](https://arxiv.org/abs/2002.05709): contrastive learning for SSL 
 - [BYOL](https://arxiv.org/abs/2006.07733): distilation for SSL
 - [Witening MSE](http://proceedings.mlr.press/v139/ermolov21a/ermolov21a.pdf): infomax for SSL
 - [Barlow Twins](https://arxiv.org/abs/2103.03230): infomax for SSL
-- Mixed Barlow Twins (ours): infomax + mixup samples for SSL
+- **Mixed Barlow Twins (ours)**: infomax + mixed samples for SSL
 
 ### Pre-Training with Mixed Barlow Twins
-Train and k-NN Evaluation using Mixed Barlow Twins on `Cifar10`, `Cifar100`, `TinyImageNet`, and `STL-10`:
-On `Cifar10`, `Cifar100`, `tinyimagenet`, `stl-10`, `ImageNet`:
+To start pre-training and k-NN Evaluation results for Mixed Barlow Twins on `CIFAR-10`, `CIFAR-100`, `TinyImageNet`, and `STL-10`, please run:
 ```
 sh scripts-pretrain/[dataset].sh
 ```
 
 ### Linear Evaluation of Pre-trained Models
-**Make sure to specify `model_path` argument correctly.**
-On `Cifar10`, `Cifar100`, `tinyimagenet`, `stl-10`, and `ImageNet`:
+**Make sure to specify `model_path` argument correctly in the .sh file.**
+To get linear evaluation results on `CIFAR-10`, `CIFAR-100`, `TinyImageNet`, `STL-10`, and `ImageNet`, please run:
 ```
 sh scripts-linear/[dataset].sh
 ```
 
 ### Transfer Learning of Pre-trained Models
 **Make sure to specify `model_path` argument correctly.**
-From `Cifar10`, `Cifar100`, and `stl-10` to fine-grained classification datasets:
+To get transfer learning results from `CIFAR-10`, `CIFAR-100`, and `STL-10` to fine-grained classification datasets, please run:
 ```
 sh scripts-transfer-resnet18/[dataset]-to-x.sh
 ```
