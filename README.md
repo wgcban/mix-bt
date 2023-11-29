@@ -1,10 +1,5 @@
 # Mixed Barlow Twins
 
-> Official Pytorch implementation for Mixed Barlow Twins on small datasets (CIFAR10, STL10, and Tiny ImageNet) and ImageNet.
-
-Correspondence to: 
-  - Wele Gedara Chaminda Bandara [wgcban](https://www.wgcban.com)
-
 ##
 [**Guarding Barlow Twins Against Overfitting with Mixed Samples**](https://arxiv.org/pdf/)<br>
 [Wele Gedara Chaminda Bandara](https://www.wgcban.com) (Johns Hopkins University), [Celso M. De Melo](https://celsodemelo.net) (U.S. Army Research Laboratory), and [Vishal M. Patel](https://engineering.jhu.edu/vpatel36/) (Johns Hopkins University) <br>
