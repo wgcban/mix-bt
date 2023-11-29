@@ -56,11 +56,11 @@ You can download and place transfer learning datasets under their respective pat
 
 This repository supports the following Self-Supervised Learning (SSL) methods:
 
-- [SimCLR](https://arxiv.org/abs/2002.05709): contrastive learning for SSL 
-- [BYOL](https://arxiv.org/abs/2006.07733): distilation for SSL
-- [Witening MSE](http://proceedings.mlr.press/v139/ermolov21a/ermolov21a.pdf): infomax for SSL
-- [Barlow Twins](https://arxiv.org/abs/2103.03230): infomax for SSL
-- **Mixed Barlow Twins (ours)**: infomax + mixed samples for SSL
+- [`SimCLR`](https://arxiv.org/abs/2002.05709): contrastive learning for SSL 
+- [`BYOL`](https://arxiv.org/abs/2006.07733): distilation for SSL
+- [`Witening MSE`](http://proceedings.mlr.press/v139/ermolov21a/ermolov21a.pdf): infomax for SSL
+- [`Barlow Twins`](https://arxiv.org/abs/2103.03230): infomax for SSL
+- **`Mixed Barlow Twins (ours)`**: infomax + mixed samples for SSL
 
 ### Pre-Training with Mixed Barlow Twins
 To start pre-training and obtain k-NN evaluation results for Mixed Barlow Twins on `CIFAR-10`, `CIFAR-100`, `TinyImageNet`, and `STL-10`, please run:
