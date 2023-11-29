@@ -1,5 +1,5 @@
 #!/bin/bash
-gpu=1
+gpu=0
 dataset=tiny_imagenet
 arch=resnet18
 feature_dim=1024

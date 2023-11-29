@@ -1,5 +1,5 @@
 #!/bin/bash
-gpu=6
+gpu=0
 dataset=stl10
 arch=resnet50
 feature_dim=4096

@@ -1,5 +1,5 @@
 #!/bin/bash
-gpu=3
+gpu=0
 dataset=cifar100
 arch=resnet18
 feature_dim=2048
