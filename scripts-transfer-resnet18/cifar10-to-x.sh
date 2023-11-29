@@ -1,10 +1,10 @@
 #!/bin/bash
 gpu=0
-dataset=stl10
+dataset=cifar10
 arch=resnet18
 batch_size=128
-wandb_group='mbt'
-model_path=checkpoints/i7det4xq_0.0078125_1024_256_stl10_model.pth
+wandb_group='best-mbt'
+model_path=checkpoints/4wdhbpcf_0.0078125_1024_256_cifar10_model.pth
 
 timestamp=$(date +"%Y%m%d%H%M%S")
 session_name="python_session_$timestamp"
