@@ -5,11 +5,15 @@
 
 ## Usage
 ### Requirements
+
+Before using this repository, make sure you have the following prerequisites installed:
+
 - [Anaconda](https://www.anaconda.com/download/)
 - [PyTorch](https://pytorch.org)
-```
+
+You can install PyTorch with the following command:
+```bash
 conda install pytorch torchvision cudatoolkit=10.0 -c pytorch
-```
 
 - clone this repo:
 ```
