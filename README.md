@@ -91,7 +91,7 @@ sh scripts-transfer-resnet18/[dataset]-to-x.sh
 ```
 
 ## 3 Pre-Trained Checkpoints
-Download the pre-trained models from [GitHub (Releases v1.0.0)](https://github.com/wgcban/mix-bt/releases/tag/v1.0.0) and store them in `checkpoints/`. This repository provides pre-trained checkpoints for both `ResNet-18` and `ResNet-50` architectures.
+Download the pre-trained models from [GitHub (Releases v1.0.0)](https://github.com/wgcban/mix-bt/releases/tag/v1.0.0) and store them in `checkpoints/`. This repository provides pre-trained checkpoints for both `[ResNet-18](https://arxiv.org/abs/1512.03385)` and `[ResNet-50](https://arxiv.org/abs/1512.03385)` architectures.
 
 #### 3.1 ResNet-18
 | Dataset        |  d   | $\lambda_{BT}$ | $\lambda_{reg}$ | Path to Pretrained Model | KNN Acc. | Linear Acc. |
