@@ -4,22 +4,6 @@
 
 ![mask-vis-1](mix-bt.jpg)
 
-```mermaid
-graph LR
-subgraph boxStyle[""]
-    style styleBox fill:#f9f9f9,stroke:#c4c4c4,stroke-width:2px
-    equation1[Equation 1]
-    equation2[Equation 2]
-    equation3[Equation 3]
-    equation4[Equation 4]
-end
-
-equation1 --> equation2
-equation2 --> equation3
-equation3 --> equation4
-
-```
-
 $C^{MA} = (Z^M)^TZ^A$
 
 $C^{MB} = (Z^M)^TZ^B$
