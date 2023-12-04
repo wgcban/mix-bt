@@ -4,6 +4,12 @@
 [Wele Gedara Chaminda Bandara](https://www.wgcban.com) (Johns Hopkins University), [Celso M. De Melo](https://celsodemelo.net) (U.S. Army Research Laboratory), and [Vishal M. Patel](https://engineering.jhu.edu/vpatel36/) (Johns Hopkins University) <br>
 
 ## 1 Overview of Mixed Barlow Twins
+
+TL;DR
+- Mixed Barlow Twins aims to improve sample interaction during Barlow Twins training via linearly interpolated samples. 
+- We introduce an additional regularization term to the original Barlow Twins objective, assuming linear interpolation in the input space translates to linearly interpolated features in the feature space.
+- Pre-training with this regularization effectively mitigates feature overfitting and further enhances the downstream performance on `CIFAR-10`, `CIFAR-100`, `TinyImageNet`, `STL-10`, and `ImageNet` datasets.
+
 ![mask-vis-1](mix-bt.jpg)
 
 $C^{MA} = (Z^M)^TZ^A$
