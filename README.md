@@ -112,10 +112,10 @@ Download the pre-trained models from [GitHub (Releases v1.0.0)](https://github.c
 **On ImageNet**
 | # Epochs        |  $d$   | $\lambda_{BT}$ | $\lambda_{reg}$ | Download Link to Pretrained Model | Linear Acc. |
 | ----------     | ---  | ---------- | ---------- | ------------------------ | ----------- |
-| 300             | 8192 | 0.0051  | 0.0 (i.e., BT)        | []()   | 71.3        |
-| 300             | 8192 | 0.0051  | 0.0025       | []()     |  70.9        |
-| 300             | 8192 | 0.0051  | 0.1        | [13awtq23_0.0051_8192_1024_imagenet_0.1_resnet50.pth](https://github.com/wgcban/mix-bt/releases/download/v1.0.0/13awtq23_0.0051_8192_1024_imagenet_0.1_resnet50.pth)   | 71.6        |
-| 300             | 8192 | 0.0051  | 1.0        | []()     | 72.2        |
+| 300             | 8192 | 0.0051  | 0.0 (i.e., BT)        | [3on0l4wl_0.0000_8192_1024_imagenet_resnet50.pth](https://github.com/wgcban/mix-bt/releases/download/v1.0.0/3on0l4wl_0.0000_8192_1024_imagenet_resnet50.pth)   | 71.3        |
+| 300             | 8192 | 0.0051  | 0.0025       | [l418b9zw_0.0025_8192_1024_imagenet_resnet50.pth](https://github.com/wgcban/mix-bt/releases/download/v1.0.0/l418b9zw_0.0025_8192_1024_imagenet_resnet50.pth)     |  70.9        |
+| 300             | 8192 | 0.0051  | 0.1        | [13awtq23_0.1000_8192_1024_imagenet_resnet50](https://github.com/wgcban/mix-bt/releases/download/v1.0.0/13awtq23_0.1000_8192_1024_imagenet_resnet50.pth)   | 71.6        |
+| 300             | 8192 | 0.0051  | 1.0        | [3fb1op86_1.0000_8192_1024_imagenet_resnet50.pth](https://github.com/wgcban/mix-bt/releases/download/v1.0.0/3fb1op86_1.0000_8192_1024_imagenet_resnet50.pth)     | 72.2        |
 | 300             | 8192 | 0.0051  | 3.0        | []()     | xx.x        |
 | 300             | 8192 | 0.0051  | 5.0        | []()     | xx.x        |
 
