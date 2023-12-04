@@ -60,7 +60,7 @@ This repository supports the following pre-training datasets:
 
 To use `TinyImageNet`, please follow the preprocessing instructions provided in the [TinyImageNet-Script](https://gist.github.com/moskomule/2e6a9a463f50447beca4e64ab4699ac4). Download these datasets and place them in the `data` directory.
 
-### 2.4 Supported Transfer Learning Datasets:
+### 2.4 Supported Transfer Learning Datasets
 You can download and place transfer learning datasets under their respective paths, such as 'data/DTD'. The supported transfer learning datasets include:
 - `DTD`: https://www.robots.ox.ac.uk/~vgg/data/dtd/ 
 - `MNIST`: http://yann.lecun.com/exdb/mnist/
