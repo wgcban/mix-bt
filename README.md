@@ -10,7 +10,7 @@ TL;DR
 - We introduce an additional regularization term to the original Barlow Twins objective, assuming linear interpolation in the input space translates to linearly interpolated features in the feature space.
 - Pre-training with this regularization effectively mitigates feature overfitting and further enhances the downstream performance on `CIFAR-10`, `CIFAR-100`, `TinyImageNet`, `STL-10`, and `ImageNet` datasets.
 
-<img src="mix-bt.svg" width="1024">
+<img src="figs/mix-bt.svg" width="1024">
 
 $C^{MA} = (Z^M)^TZ^A$
 
@@ -145,6 +145,11 @@ Download the pre-trained models from [GitHub (Releases v1.0.0)](https://github.c
 | 300             | 8192 | 0.0051  | 1.0        | [3fb1op86_1.0000_8192_1024_imagenet_resnet50.pth](https://github.com/wgcban/mix-bt/releases/download/v1.0.0/3fb1op86_1.0000_8192_1024_imagenet_resnet50.pth)     | **72.2**        |
 | 300             | 8192 | 0.0051  | 3.0        | [TBU]()     | TBU        |
 | 300             | 8192 | 0.0051  | 5.0        | [TBU]()     | TBU        |
+
+**`ImageNet` training statistics**
+<img src="figs/in-loss-bt.png" width="300">
+<img src="figs/in-loss-reg.png" width="300">
+<img src="figs/in-linear.png" width="300">
 
 ## 4 Disclaimer
 A large portion of the code is from [Barlow Twins HSIC](https://github.com/yaohungt/Barlow-Twins-HSIC) (for experiments on small datasets: `CIFAR-10`, `CIFAR-100`, `TinyImageNet`, and `STL-10`) and official implementation of Barlow Twins [here](https://github.com/facebookresearch/barlowtwins) (for experiments on ImageNet), which is a great resource for academic development.
