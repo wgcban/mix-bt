@@ -109,10 +109,10 @@ Download the pre-trained models from [GitHub (Releases v1.0.0)](https://github.c
 | `TinyImageNet`   | 1024 | 0.0009765  | 4.0        | [kxlkigsv_0.0009765_1024_256_tiny_imagenet_model.pth](https://github.com/wgcban/mix-bt/releases/download/v1.0.0/kxlkigsv_0.0009765_1024_256_tiny_imagenet_model.pth)     | 42.21     | 51.84        |
 | `STL-10`        | 1024 | 0.0078125  | 2.0        | [pbknx38b_0.0078125_1024_256_stl10_model.pth](https://github.com/wgcban/mix-bt/releases/download/v1.0.0/pbknx38b_0.0078125_1024_256_stl10_model.pth)     | 87.79     | 91.70        |
 
-ImageNet Experiemnts (300 epochs)
-| Dataset        |  $d$   | $\lambda_{BT}$ | $\lambda_{reg}$ | Download Link to Pretrained Model | KNN Acc. | Linear Acc. |
+**On ImageNet**
+| # Epochs        |  $d$   | $\lambda_{BT}$ | $\lambda_{reg}$ | Download Link to Pretrained Model | KNN Acc. | Linear Acc. |
 | ----------     | ---  | ---------- | ---------- | ------------------------ | -------- | ----------- |
-| `ImageNet`       | 1024 | 0.0051  | 0.1        | [13awtq23_0.0051_8192_1024_imagenet_0.1_resnet50.pth](https://github.com/wgcban/mix-bt/releases/download/v1.0.0/13awtq23_0.0051_8192_1024_imagenet_0.1_resnet50.pth)     | -     | 72.1        |
+| 300             | 8192 | 0.0051  | 0.1        | [13awtq23_0.0051_8192_1024_imagenet_0.1_resnet50.pth](https://github.com/wgcban/mix-bt/releases/download/v1.0.0/13awtq23_0.0051_8192_1024_imagenet_0.1_resnet50.pth)     | -     | 72.1        |
 
 ## 4 Disclaimer
 A large portion of the code is from [Barlow Twins HSIC](https://github.com/yaohungt/Barlow-Twins-HSIC) (for experiments on small datasets: `CIFAR-10`, `CIFAR-100`, `TinyImageNet`, and `STL-10`) and official implementation of Barlow Twins [here](https://github.com/facebookresearch/barlowtwins) (for experiments on ImageNet), which is a great resource for academic development.
