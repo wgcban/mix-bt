@@ -147,6 +147,7 @@ Download the pre-trained models from [GitHub (Releases v1.0.0)](https://github.c
 | 300             | 8192 | 0.0051  | 5.0        | [TBU]()     | TBU        |
 
 **`ImageNet` training statistics**
+
 <img src="figs/in-loss-bt.png" width="300">
 <img src="figs/in-loss-reg.png" width="300">
 <img src="figs/in-linear.png" width="300">
