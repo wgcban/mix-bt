@@ -45,6 +45,8 @@ Next, create the [conda](https://docs.conda.io/projects/conda/en/stable/) enviro
 conda env create -f environment.yml
 ```
 
+All the train-val-test statistics will be automatically upload to [`wandb`](https://wandb.ai/home), and please refer [`wandb-quick-start`](https://wandb.ai/quickstart?utm_source=app-resource-center&utm_medium=app&utm_term=quickstart) documentation if you are not familiar with using `wandb`. 
+
 ### 2.3 Supported Pre-training Datasets
 
 This repository supports the following pre-training datasets:
