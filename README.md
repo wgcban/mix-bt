@@ -151,14 +151,14 @@ Here we provide some training and validation (linear probing) statistics for Bar
 
 <img src="figs/in-loss-bt.png" width="280"/> <img src="figs/in-loss-reg.png" width="280"/> <img src="figs/in-linear.png" width="280"/> 
 
-## 4 Disclaimer
+## 5 Disclaimer
 A large portion of the code is from [Barlow Twins HSIC](https://github.com/yaohungt/Barlow-Twins-HSIC) (for experiments on small datasets: `CIFAR-10`, `CIFAR-100`, `TinyImageNet`, and `STL-10`) and official implementation of Barlow Twins [here](https://github.com/facebookresearch/barlowtwins) (for experiments on ImageNet), which is a great resource for academic development.
 
 Also, note that the implementation of SOTA methods ([SimCLR](https://arxiv.org/abs/2002.05709), [BYOL](https://arxiv.org/abs/2006.07733), and [Witening-MSE](https://arxiv.org/abs/2007.06346)) in `ssl-sota` are copied from [Witening-MSE](https://github.com/htdt/self-supervised).
 
 We would like to thank all of them for making their repositories publicly available for the research community.
 
-## 5 Reference
+## 6 Reference
 Please consider citing our work, if you feel our work is useful in your work. Thanks.
 ```
 ```
