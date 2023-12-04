@@ -79,16 +79,35 @@ This repository supports the following Self-Supervised Learning (SSL) methods:
 - **`Mixed Barlow Twins (ours)`**: infomax + mixed samples for SSL
 
 ### 2.6 Pre-Training with Mixed Barlow Twins
-To start pre-training and obtain k-NN evaluation results for Mixed Barlow Twins on `CIFAR-10`, `CIFAR-100`, `TinyImageNet`, and `STL-10`, please run:
+To start pre-training and obtain k-NN evaluation results for Mixed Barlow Twins on `CIFAR-10`, `CIFAR-100`, `TinyImageNet`, and `STL-10` with `ResNet-18/50` backbones, please run:
 ```bash
-sh scripts-pretrain/[dataset].sh
+sh scripts-pretrain-resnet18/[dataset].sh
+```
+```bash
+sh scripts-pretrain-resnet50/[dataset].sh
+```
+
+To start the pre-training on `ImageNet` with `ResNet-50` backbone, please run:
+```bash
+sh scripts-pretrain-resnet18/imagenet.sh
 ```
 
 ### 2.7 Linear Evaluation of Pre-trained Models
-Before running linear evaluation, ensure that you specify the model_path argument correctly in the corresponding .sh file. To obtain linear evaluation results on `CIFAR-10`, `CIFAR-100`, `TinyImageNet`, `STL-10`, and `ImageNet`, please run:
+Before running linear evaluation, *ensure that you specify the `model_path` argument correctly in the corresponding .sh file*. 
+
+To obtain linear evaluation results on `CIFAR-10`, `CIFAR-100`, `TinyImageNet`, `STL-10` with `ResNet-18/50` backbones, please run:
+```bash
+sh scripts-linear-resnet18/[dataset].sh
 ```
-sh scripts-linear/[dataset].sh
+```bash
+sh scripts-linear-resnet50/[dataset].sh
 ```
+
+To obtain linear evaluation results on `ImageNet` with `ResNet-50` backbone, please run:
+```bash
+sh scripts-linear-resnet50/imagenet_sup.sh
+```
+
 
 ### 2.8 Transfer Learning of Pre-trained Models
 To perform transfer learning from pre-trained models on `CIFAR-10`, `CIFAR-100`, and `STL-10` to fine-grained classification datasets, execute the following command, making sure to specify the `model_path` argument correctly:
