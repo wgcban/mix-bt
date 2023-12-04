@@ -28,9 +28,9 @@ Before using this repository, make sure you have the following prerequisites ins
 - [Anaconda](https://www.anaconda.com/download/)
 - [PyTorch](https://pytorch.org)
 
-You can install PyTorch with the following command:
+You can install PyTorch with the following [command](https://pytorch.org/get-started/locally/) (in Linux OS):
 ```bash
-conda install pytorch torchvision cudatoolkit=10.0 -c pytorch
+conda install pytorch torchvision pytorch-cuda=11.8 -c pytorch -c nvidia
 ```
 
 ### 2.2 Installation
