@@ -148,7 +148,7 @@ Download the pre-trained models from [GitHub (Releases v1.0.0)](https://github.c
 
 **`ImageNet` training statistics**
 
-![in-loss-bt](figs/in-los-bt "Barlow Twins Loss") ![in-loss-reg](figs/in-loss-reg.png "MixUp Regularization Loss") ![in-linear](figs/in-linear "Linear Evaluation Results")
+![in-loss-bt](figs/in-los-bt.png "Barlow Twins Loss") ![in-loss-reg](figs/in-loss-reg.png "MixUp Regularization Loss") ![in-linear](figs/in-linear.png "Linear Evaluation Results")
 
 ## 4 Disclaimer
 A large portion of the code is from [Barlow Twins HSIC](https://github.com/yaohungt/Barlow-Twins-HSIC) (for experiments on small datasets: `CIFAR-10`, `CIFAR-100`, `TinyImageNet`, and `STL-10`) and official implementation of Barlow Twins [here](https://github.com/facebookresearch/barlowtwins) (for experiments on ImageNet), which is a great resource for academic development.
