@@ -109,7 +109,7 @@ Download the pre-trained models from [GitHub (Releases v1.0.0)](https://github.c
 | `TinyImageNet`   | 1024 | 0.0009765  | 4.0        | [kxlkigsv_0.0009765_1024_256_tiny_imagenet_model.pth](https://github.com/wgcban/mix-bt/releases/download/v1.0.0/kxlkigsv_0.0009765_1024_256_tiny_imagenet_model.pth)     | 42.21     | 51.84        |
 | `STL-10`        | 1024 | 0.0078125  | 2.0        | [pbknx38b_0.0078125_1024_256_stl10_model.pth](https://github.com/wgcban/mix-bt/releases/download/v1.0.0/pbknx38b_0.0078125_1024_256_stl10_model.pth)     | 87.79     | 91.70        |
 
-**On ImageNet**
+**On `ImageNet`**
 | # Epochs        |  $d$   | $\lambda_{BT}$ | $\lambda_{reg}$ | Download Link to Pretrained Model | Linear Acc. |
 | ----------     | ---  | ---------- | ---------- | ------------------------ | ----------- |
 | 300             | 8192 | 0.0051  | 0.0 (BT)        | [3on0l4wl_0.0000_8192_1024_imagenet_resnet50.pth](https://github.com/wgcban/mix-bt/releases/download/v1.0.0/3on0l4wl_0.0000_8192_1024_imagenet_resnet50.pth)   | 71.3        |
