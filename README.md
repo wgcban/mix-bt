@@ -146,7 +146,8 @@ Download the pre-trained models from [GitHub (Releases v1.0.0)](https://github.c
 | 300             | 8192 | 0.0051  | 3.0        | [TBU]()     | TBU        |
 | 300             | 8192 | 0.0051  | 5.0        | [TBU]()     | TBU        |
 
-**`ImageNet` training statistics**
+## 4 Training Statistics
+Here we provide some training and validation (linear probing) statistics for Barlow Twins *vs.* Mixed Barlow Twins with `ResNet-50` backbone on `ImageNet`:
 
 <img src="figs/in-loss-bt.png" width="280"/> <img src="figs/in-loss-reg.png" width="280"/> <img src="figs/in-linear.png" width="280"/> 
 
