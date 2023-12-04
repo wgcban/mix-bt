@@ -112,7 +112,12 @@ Download the pre-trained models from [GitHub (Releases v1.0.0)](https://github.c
 **On ImageNet**
 | # Epochs        |  $d$   | $\lambda_{BT}$ | $\lambda_{reg}$ | Download Link to Pretrained Model | KNN Acc. | Linear Acc. |
 | ----------     | ---  | ---------- | ---------- | ------------------------ | -------- | ----------- |
-| 300             | 8192 | 0.0051  | 0.1        | [13awtq23_0.0051_8192_1024_imagenet_0.1_resnet50.pth](https://github.com/wgcban/mix-bt/releases/download/v1.0.0/13awtq23_0.0051_8192_1024_imagenet_0.1_resnet50.pth)     | -     | 72.1        |
+| 300             | 8192 | 0.0051  | 0.0 (i.e., BT)        | []()     | -     | 71.3        |
+| 300             | 8192 | 0.0051  | 0.0025       | []()     | -     | 70.9        |
+| 300             | 8192 | 0.0051  | 0.1        | [13awtq23_0.0051_8192_1024_imagenet_0.1_resnet50.pth](https://github.com/wgcban/mix-bt/releases/download/v1.0.0/13awtq23_0.0051_8192_1024_imagenet_0.1_resnet50.pth)     | -     | 71.6        |
+| 300             | 8192 | 0.0051  | 1.0        | []()     | -     | 72.2        |
+| 300             | 8192 | 0.0051  | 3.0        | []()     | -     | xx.x        |
+| 300             | 8192 | 0.0051  | 5.0        | []()     | -     | xx.x        |
 
 ## 4 Disclaimer
 A large portion of the code is from [Barlow Twins HSIC](https://github.com/yaohungt/Barlow-Twins-HSIC) (for experiments on small datasets: `CIFAR-10`, `CIFAR-100`, `TinyImageNet`, and `STL-10`) and official implementation of Barlow Twins [here](https://github.com/facebookresearch/barlowtwins) (for experiments on ImageNet), which is a great resource for academic development.
