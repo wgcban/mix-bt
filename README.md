@@ -1,5 +1,8 @@
 # Mixed Barlow Twins
 [**Guarding Barlow Twins Against Overfitting with Mixed Samples**](https://arxiv.org/abs/2312.02151)<br>
+[![arXiv](https://img.shields.io/badge/arXiv-2312.02151-b31b1b)](https://arxiv.org/abs/2312.02151)
+[![Hugging Face Model Card](https://img.shields.io/badge/Model%20Card-Hugging%20Face-%2334D058)](https://huggingface.co/wgcban/mix-bt)
+
 
 [Wele Gedara Chaminda Bandara](https://www.wgcban.com) (Johns Hopkins University), [Celso M. De Melo](https://celsodemelo.net) (U.S. Army Research Laboratory), and [Vishal M. Patel](https://engineering.jhu.edu/vpatel36/) (Johns Hopkins University) <br>
 
