@@ -160,7 +160,7 @@ We would like to thank all of them for making their repositories publicly availa
 
 ## 6 Reference
 If you feel our work is useful, please consider citing our work. Thanks!
-```
+```bibtex
 @misc{bandara2023guarding,
       title={Guarding Barlow Twins Against Overfitting with Mixed Samples}, 
       author={Wele Gedara Chaminda Bandara and Celso M. De Melo and Vishal M. Patel},
