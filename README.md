@@ -1,5 +1,5 @@
 # Mixed Barlow Twins
-[**Guarding Barlow Twins Against Overfitting with Mixed Samples**](https://arxiv.org/pdf/)<br>
+[**Guarding Barlow Twins Against Overfitting with Mixed Samples**](https://arxiv.org/abs/2312.02151)<br>
 
 [Wele Gedara Chaminda Bandara](https://www.wgcban.com) (Johns Hopkins University), [Celso M. De Melo](https://celsodemelo.net) (U.S. Army Research Laboratory), and [Vishal M. Patel](https://engineering.jhu.edu/vpatel36/) (Johns Hopkins University) <br>
 
@@ -161,4 +161,12 @@ We would like to thank all of them for making their repositories publicly availa
 ## 6 Reference
 Please consider citing our work, if you feel our work is useful in your work. Thanks.
 ```
+@misc{bandara2023guarding,
+      title={Guarding Barlow Twins Against Overfitting with Mixed Samples}, 
+      author={Wele Gedara Chaminda Bandara and Celso M. De Melo and Vishal M. Patel},
+      year={2023},
+      eprint={2312.02151},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
 ```
