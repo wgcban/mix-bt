@@ -1,6 +1,5 @@
 # Mixed Barlow Twins
-[**Guarding Barlow Twins Against Overfitting with Mixed Samples**](https://arxiv.org/abs/2312.02151)<br> 
-[![Paper](doc/badges/badge-pdf.svg)](https://arxiv.org/abs/2312.02151)
+[**Guarding Barlow Twins Against Overfitting with Mixed Samples**](https://arxiv.org/abs/2312.02151)<br>
 
 [Wele Gedara Chaminda Bandara](https://www.wgcban.com) (Johns Hopkins University), [Celso M. De Melo](https://celsodemelo.net) (U.S. Army Research Laboratory), and [Vishal M. Patel](https://engineering.jhu.edu/vpatel36/) (Johns Hopkins University) <br>
 
@@ -160,7 +159,7 @@ Also, note that the implementation of SOTA methods ([SimCLR](https://arxiv.org/a
 We would like to thank all of them for making their repositories publicly available for the research community. 🙏
 
 ## 6 Reference
-Please consider citing our work, if you feel our work is useful in your work. Thanks.
+If you feel our work is useful, please consider citing our work. Thanks!
 ```
 @misc{bandara2023guarding,
       title={Guarding Barlow Twins Against Overfitting with Mixed Samples}, 
@@ -171,3 +170,6 @@ Please consider citing our work, if you feel our work is useful in your work. Th
       primaryClass={cs.CV}
 }
 ```
+
+## 7 License
+This code is under MIT licence, you can find the complete file [here](https://github.com/wgcban/mix-bt/blob/main/LICENSE).
