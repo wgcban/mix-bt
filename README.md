@@ -146,7 +146,7 @@ Download the pre-trained models from [GitHub (Releases v1.0.0)](https://github.c
 | 300             | 8192 | 0.0051  | 0.0025       | [l418b9zw_0.0025_8192_1024_imagenet_resnet50.pth](https://github.com/wgcban/mix-bt/releases/download/v1.0.0/l418b9zw_0.0025_8192_1024_imagenet_resnet50.pth)     |  70.9        |
 | 300             | 8192 | 0.0051  | 0.1        | [13awtq23_0.1000_8192_1024_imagenet_resnet50](https://github.com/wgcban/mix-bt/releases/download/v1.0.0/13awtq23_0.1000_8192_1024_imagenet_resnet50.pth)   | 71.6        |
 | 300             | 8192 | 0.0051  | 1.0        | [3fb1op86_1.0000_8192_1024_imagenet_resnet50.pth](https://github.com/wgcban/mix-bt/releases/download/v1.0.0/3fb1op86_1.0000_8192_1024_imagenet_resnet50.pth)     | **72.2**        |
-| 300             | 8192 | 0.0051  | 3.0        | [TBU]()     | 71.99        |
+| 300             | 8192 | 0.0051  | 3.0        | [TBU]()     | 72.0        |
 | 300             | 8192 | 0.0051  | 5.0        | [TBU]()     | TBU        |
 
 ## 4 Training Statistics
