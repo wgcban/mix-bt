@@ -143,10 +143,6 @@ Download the pre-trained models from [GitHub (Releases v1.0.0)](https://github.c
 #### 3.3. ResNet-50 on `ImageNet`
 > Setting: epochs = 300, $d$ = 8192, $\lambda_{BT}$ = 0.0051
 
-Logs on `wandb` can be accessed via following links:
-- imagenet pre-training: https://api.wandb.ai/links/cha-yas/5olb2sar
-- imagenet linear probing: https://api.wandb.ai/links/cha-yas/9tb0ksfp
-
 | $\lambda_{reg}$ | Download Link to Pretrained Model | Train Log | Download Link to Linear-Probed Model | Val. Log | Linear Acc. |
 | ---------- | --------------------- | ------ | ----- | ------ | ----------- |
 | 0.0 (BT)        | [3on0l4wl_0.0000_8192_1024_imagenet_resnet50.pth](https://github.com/wgcban/mix-bt/releases/download/v1.0.0/3on0l4wl_0.0000_8192_1024_imagenet_resnet50.pth) | [train_log](https://github.com/wgcban/mix-bt/releases/download/v1.0.0/3on0l4wl_train.txt) | [checkpoint_3tb4tcvp.pth](https://github.com/wgcban/mix-bt/releases/download/v1.0.0/checkpoint_3tb4tcvp.pth) | [val_log](https://github.com/wgcban/mix-bt/releases/download/v1.0.0/3tb4tcvp_val.txt) | 71.3 |
@@ -157,8 +153,12 @@ Logs on `wandb` can be accessed via following links:
 | 3.0        | [q03u2xjz_3.0000_8192_1024_imagenet_resnet50.pth](https://github.com/wgcban/mix-bt/releases/download/v1.0.0/q03u2xjz_3.0000_8192_1024_imagenet_resnet50.pth) | [train_log](https://github.com/wgcban/mix-bt/releases/download/v1.0.0/q03u2xjz_train.txt) | [checkpoint_00atvp6x.pth](https://github.com/wgcban/mix-bt/releases/download/v1.0.0/checkpoint_00atvp6x.pth)  | [val_log](https://github.com/wgcban/mix-bt/releases/download/v1.0.0/00atvp6x_val.txt) | 72.0 |
 
 ## 4 Training/Val Logs
-Here we provide some training and validation (linear probing) statistics for Barlow Twins *vs.* Mixed Barlow Twins with `ResNet-50` backbone on `ImageNet`:
 
+Logs are available on `wandb` and can access via following links:
+- imagenet pre-training: https://api.wandb.ai/links/cha-yas/5olb2sar
+- imagenet linear probing: https://api.wandb.ai/links/cha-yas/9tb0ksfp
+
+Here we provide some training and validation (linear probing) statistics for Barlow Twins *vs.* Mixed Barlow Twins with `ResNet-50` backbone on `ImageNet`:
 <img src="figs/in-loss-bt.png" width="256"/> <img src="figs/in-loss-reg.png" width="256"/> <img src="figs/in-linear.png" width="256"/> 
 
 ## 5 Disclaimer
