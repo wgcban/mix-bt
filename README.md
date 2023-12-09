@@ -141,11 +141,9 @@ Download the pre-trained models from [GitHub (Releases v1.0.0)](https://github.c
 | `STL-10`        | 1024 | 0.0078125  | 2.0        | [pbknx38b_0.0078125_1024_256_stl10_model.pth](https://github.com/wgcban/mix-bt/releases/download/v1.0.0/pbknx38b_0.0078125_1024_256_stl10_model.pth)     | 87.79     | 91.70        |
 
 #### 3.3. ResNet-50 on `ImageNet`
-> epochs = 300
-> $d$ = 8192
-> $\lambda_{BT}$ = 0.0051
+> Setting: epochs = 300, $d$ = 8192, $\lambda_{BT}$ = 0.0051
 
-Log on `wandb` can be accessed via following links:
+Logs on `wandb` can be accessed via following links:
 - imagenet pre-training: 
 - imagenet linear probing: https://api.wandb.ai/links/cha-yas/9tb0ksfp
 
