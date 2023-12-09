@@ -156,7 +156,7 @@ Logs on `wandb` can be accessed via following links:
 | 2.0        | [5n9yqio0_1.0000_8192_1024_imagenet_resnet50.pth](https://github.com/wgcban/mix-bt/releases/download/v1.0.0/5n9yqio0_1.0000_8192_1024_imagenet_resnet50.pth) | [train_log](https://github.com/wgcban/mix-bt/releases/download/v1.0.0/5n9yqio0_train.txt) | [checkpoint_p9aeo8ga.pth](https://github.com/wgcban/mix-bt/releases/download/v1.0.0/checkpoint_p9aeo8ga.pth)  | [val_log](https://github.com/wgcban/mix-bt/releases/download/v1.0.0/p9aeo8ga_val.txt)  | 72.1 |
 | 3.0        | [q03u2xjz_3.0000_8192_1024_imagenet_resnet50.pth](https://github.com/wgcban/mix-bt/releases/download/v1.0.0/q03u2xjz_3.0000_8192_1024_imagenet_resnet50.pth) | [train_log](https://github.com/wgcban/mix-bt/releases/download/v1.0.0/q03u2xjz_train.txt) | [checkpoint_00atvp6x.pth](https://github.com/wgcban/mix-bt/releases/download/v1.0.0/checkpoint_00atvp6x.pth)  | [val_log](https://github.com/wgcban/mix-bt/releases/download/v1.0.0/00atvp6x_val.txt) | 72.0 |
 
-## 4 Training Statistics
+## 4 Training/Val Logs
 Here we provide some training and validation (linear probing) statistics for Barlow Twins *vs.* Mixed Barlow Twins with `ResNet-50` backbone on `ImageNet`:
 
 <img src="figs/in-loss-bt.png" width="256"/> <img src="figs/in-loss-reg.png" width="256"/> <img src="figs/in-linear.png" width="256"/> 
