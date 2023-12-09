@@ -140,15 +140,19 @@ Download the pre-trained models from [GitHub (Releases v1.0.0)](https://github.c
 | `STL-10`        | 1024 | 0.0078125  | 2.0        | [pbknx38b_0.0078125_1024_256_stl10_model.pth](https://github.com/wgcban/mix-bt/releases/download/v1.0.0/pbknx38b_0.0078125_1024_256_stl10_model.pth)     | 87.79     | 91.70        |
 
 **On `ImageNet`**
-| # Epochs        |  $d$   | $\lambda_{BT}$ | $\lambda_{reg}$ | Download Link to Pretrained Model | Linear Acc. |
+> epochs = 300
+> $d$ = 8192
+> $\lambda_{BT}$ = 0.0051
+
+| $\lambda_{reg}$ | Download Link to Pretrained Model | Linear Acc. |
 | ----------     | ---  | ---------- | ---------- | ------------------------ | ----------- |
-| 300             | 8192 | 0.0051  | 0.0 (BT)        | [3on0l4wl_0.0000_8192_1024_imagenet_resnet50.pth](https://github.com/wgcban/mix-bt/releases/download/v1.0.0/3on0l4wl_0.0000_8192_1024_imagenet_resnet50.pth) [train_log](https://github.com/wgcban/mix-bt/releases/download/v1.0.0/3on0l4wl_train.txt)  | 71.3        |
-| 300             | 8192 | 0.0051  | 0.0025       | [l418b9zw_0.0025_8192_1024_imagenet_resnet50.pth](https://github.com/wgcban/mix-bt/releases/download/v1.0.0/l418b9zw_0.0025_8192_1024_imagenet_resnet50.pth) [train_log](https://github.com/wgcban/mix-bt/releases/download/v1.0.0/l418b9zw_train.txt)   |  70.9        |
-| 300             | 8192 | 0.0051  | 0.1        | [13awtq23_0.1000_8192_1024_imagenet_resnet50](https://github.com/wgcban/mix-bt/releases/download/v1.0.0/13awtq23_0.1000_8192_1024_imagenet_resnet50.pth) [train_log](https://github.com/wgcban/mix-bt/releases/download/v1.0.0/13awtq23_train.txt)  | 71.6        |
-| 300             | 8192 | 0.0051  | 1.0        | [3fb1op86_1.0000_8192_1024_imagenet_resnet50.pth](https://github.com/wgcban/mix-bt/releases/download/v1.0.0/3fb1op86_1.0000_8192_1024_imagenet_resnet50.pth) [train_log](https://github.com/wgcban/mix-bt/releases/download/v1.0.0/3fb1op86_train.txt)   | **72.2**        |
-| 300             | 8192 | 0.0051  | 2.0        | [5n9yqio0_1.0000_8192_1024_imagenet_resnet50.pth](https://github.com/wgcban/mix-bt/releases/download/v1.0.0/5n9yqio0_1.0000_8192_1024_imagenet_resnet50.pth) [train_log](https://github.com/wgcban/mix-bt/releases/download/v1.0.0/5n9yqio0_train.txt)   | **xx.x**        |
-| 300             | 8192 | 0.0051  | 3.0        | [q03u2xjz_3.0000_8192_1024_imagenet_resnet50.pth](https://github.com/wgcban/mix-bt/releases/download/v1.0.0/q03u2xjz_3.0000_8192_1024_imagenet_resnet50.pth) [train_log](https://github.com/wgcban/mix-bt/releases/download/v1.0.0/q03u2xjz_train.txt)   | 72.0        |
-| 300             | 8192 | 0.0051  | 5.0        | [TBU]()     | TBU        |
+| 0.0 (BT)        | [3on0l4wl_0.0000_8192_1024_imagenet_resnet50.pth](https://github.com/wgcban/mix-bt/releases/download/v1.0.0/3on0l4wl_0.0000_8192_1024_imagenet_resnet50.pth) [train_log](https://github.com/wgcban/mix-bt/releases/download/v1.0.0/3on0l4wl_train.txt)  | 71.3        |
+| 0.0025       | [l418b9zw_0.0025_8192_1024_imagenet_resnet50.pth](https://github.com/wgcban/mix-bt/releases/download/v1.0.0/l418b9zw_0.0025_8192_1024_imagenet_resnet50.pth) [train_log](https://github.com/wgcban/mix-bt/releases/download/v1.0.0/l418b9zw_train.txt)   |  70.9        |
+| 0.1        | [13awtq23_0.1000_8192_1024_imagenet_resnet50](https://github.com/wgcban/mix-bt/releases/download/v1.0.0/13awtq23_0.1000_8192_1024_imagenet_resnet50.pth) [train_log](https://github.com/wgcban/mix-bt/releases/download/v1.0.0/13awtq23_train.txt)  | 71.6        |
+| 1.0        | [3fb1op86_1.0000_8192_1024_imagenet_resnet50.pth](https://github.com/wgcban/mix-bt/releases/download/v1.0.0/3fb1op86_1.0000_8192_1024_imagenet_resnet50.pth) [train_log](https://github.com/wgcban/mix-bt/releases/download/v1.0.0/3fb1op86_train.txt)   | **72.2**        |
+| 2.0        | [5n9yqio0_1.0000_8192_1024_imagenet_resnet50.pth](https://github.com/wgcban/mix-bt/releases/download/v1.0.0/5n9yqio0_1.0000_8192_1024_imagenet_resnet50.pth) [train_log](https://github.com/wgcban/mix-bt/releases/download/v1.0.0/5n9yqio0_train.txt)   | **xx.x**        |
+| 3.0        | [q03u2xjz_3.0000_8192_1024_imagenet_resnet50.pth](https://github.com/wgcban/mix-bt/releases/download/v1.0.0/q03u2xjz_3.0000_8192_1024_imagenet_resnet50.pth) [train_log](https://github.com/wgcban/mix-bt/releases/download/v1.0.0/q03u2xjz_train.txt)   | 72.0        |
+| 5.0        | [TBU]()     | TBU        |
 
 ## 4 Training Statistics
 Here we provide some training and validation (linear probing) statistics for Barlow Twins *vs.* Mixed Barlow Twins with `ResNet-50` backbone on `ImageNet`:
