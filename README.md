@@ -159,6 +159,7 @@ Logs are available on `wandb` and can access via following links:
 - imagenet linear probing: https://api.wandb.ai/links/cha-yas/9tb0ksfp
 
 Here we provide some training and validation (linear probing) statistics for Barlow Twins *vs.* Mixed Barlow Twins with `ResNet-50` backbone on `ImageNet`:
+
 <img src="figs/in-loss-bt.png" width="256"/> <img src="figs/in-loss-reg.png" width="256"/> <img src="figs/in-linear.png" width="256"/> 
 
 ## 5 Disclaimer
