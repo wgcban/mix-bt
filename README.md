@@ -124,7 +124,7 @@ sh scripts-transfer-resnet18/[dataset]-to-x.sh
 ## 3 Pre-Trained Checkpoints
 Download the pre-trained models from [GitHub (Releases v1.0.0)](https://github.com/wgcban/mix-bt/releases/tag/v1.0.0) and store them in `checkpoints/`. This repository provides pre-trained checkpoints for both [`ResNet-18`](https://arxiv.org/abs/1512.03385) and [`ResNet-50`](https://arxiv.org/abs/1512.03385) architectures.
 
-#### 3.1 ResNet-18
+#### 3.1 ResNet-18 \[`CIFAR-10`, `CIFAR-100`, `TinyImageNet`, and `STL-10`\]
 | Dataset        |  $d$   | $\lambda_{BT}$ | $\lambda_{reg}$ | Download Link to Pretrained Model | KNN Acc. | Linear Acc. |
 | ----------     | ---  | ---------- | ---------- | ------------------------ | -------- | ----------- |
 | `CIFAR-10`       | 1024 | 0.0078125  | 4.0        | [4wdhbpcf_0.0078125_1024_256_cifar10_model.pth](https://github.com/wgcban/mix-bt/releases/download/v1.0.0/4wdhbpcf_0.0078125_1024_256_cifar10_model.pth)     | 90.52    | 92.58        |
@@ -132,7 +132,7 @@ Download the pre-trained models from [GitHub (Releases v1.0.0)](https://github.c
 | `TinyImageNet`   | 1024 | 0.0009765  | 4.0        | [02azq6fs_0.0009765_1024_256_tiny_imagenet_model.pth](https://github.com/wgcban/mix-bt/releases/download/v1.0.0/02azq6fs_0.0009765_1024_256_tiny_imagenet_model.pth)     | 38.11    | 51.67        |
 | `STL-10`        | 1024 | 0.0078125  | 2.0        | [i7det4xq_0.0078125_1024_256_stl10_model.pth](https://github.com/wgcban/mix-bt/releases/download/v1.0.0/i7det4xq_0.0078125_1024_256_stl10_model.pth)     | 88.94     | 91.02        |
 
-#### 3.2 ResNet-50
+#### 3.2 ResNet-50 \[`CIFAR-10`, `CIFAR-100`, `TinyImageNet`, and `STL-10`\]
 | Dataset        |  $d$   | $\lambda_{BT}$ | $\lambda_{reg}$ | Download Link to Pretrained Model | KNN Acc. | Linear Acc. |
 | ----------     | ---  | ---------- | ---------- | ------------------------ | -------- | ----------- |
 | `CIFAR-10`       | 1024 | 0.0078125  | 4.0        | [v3gwgusq_0.0078125_1024_256_cifar10_model.pth](https://github.com/wgcban/mix-bt/releases/download/v1.0.0/v3gwgusq_0.0078125_1024_256_cifar10_model.pth)     | 91.39     | 93.89        |
@@ -140,7 +140,7 @@ Download the pre-trained models from [GitHub (Releases v1.0.0)](https://github.c
 | `TinyImageNet`   | 1024 | 0.0009765  | 4.0        | [kxlkigsv_0.0009765_1024_256_tiny_imagenet_model.pth](https://github.com/wgcban/mix-bt/releases/download/v1.0.0/kxlkigsv_0.0009765_1024_256_tiny_imagenet_model.pth)     | 42.21     | 51.84        |
 | `STL-10`        | 1024 | 0.0078125  | 2.0        | [pbknx38b_0.0078125_1024_256_stl10_model.pth](https://github.com/wgcban/mix-bt/releases/download/v1.0.0/pbknx38b_0.0078125_1024_256_stl10_model.pth)     | 87.79     | 91.70        |
 
-**On `ImageNet`**
+#### 3.3. ResNet-50 on `ImageNet`
 > epochs = 300
 > $d$ = 8192
 > $\lambda_{BT}$ = 0.0051
