@@ -142,10 +142,12 @@ Download the pre-trained models from [GitHub (Releases v1.0.0)](https://github.c
 
 **On `ImageNet`**
 > epochs = 300
-
 > $d$ = 8192
-
 > $\lambda_{BT}$ = 0.0051
+
+Log on `wandb` can be accessed via following links:
+- imagenet pre-training: 
+- imagenet linear probing: https://api.wandb.ai/links/cha-yas/9tb0ksfp
 
 | $\lambda_{reg}$ | Download Link to Pretrained Model | Train Log | Download Link to Linear-Probed Model | Val. Log | Linear Acc. |
 | ---------- | --------------------- | ------ | ----- | ------ | ----------- |
