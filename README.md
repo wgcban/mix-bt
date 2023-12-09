@@ -1,4 +1,4 @@
-# Mixed Barlow Twins
+# Mixed Barlow Twins for Self-Supervised Representation Learning
 [**Guarding Barlow Twins Against Overfitting with Mixed Samples**](https://arxiv.org/abs/2312.02151)<br>
 [![arXiv](https://img.shields.io/badge/arXiv-2312.02151-b31b1b)](https://arxiv.org/abs/2312.02151)
 [![Hugging Face Model Card](https://img.shields.io/badge/Model%20Card-Hugging%20Face-%2334D058)](https://huggingface.co/wgcban/mix-bt)
