@@ -152,6 +152,8 @@ Download the pre-trained models from [GitHub (Releases v1.0.0)](https://github.c
 | 2.0        | [5n9yqio0_1.0000_8192_1024_imagenet_resnet50.pth](https://github.com/wgcban/mix-bt/releases/download/v1.0.0/5n9yqio0_1.0000_8192_1024_imagenet_resnet50.pth) | [train_log](https://github.com/wgcban/mix-bt/releases/download/v1.0.0/5n9yqio0_train.txt) | [checkpoint_p9aeo8ga.pth](https://github.com/wgcban/mix-bt/releases/download/v1.0.0/checkpoint_p9aeo8ga.pth)  | [val_log](https://github.com/wgcban/mix-bt/releases/download/v1.0.0/p9aeo8ga_val.txt)  | 72.1 |
 | 3.0        | [q03u2xjz_3.0000_8192_1024_imagenet_resnet50.pth](https://github.com/wgcban/mix-bt/releases/download/v1.0.0/q03u2xjz_3.0000_8192_1024_imagenet_resnet50.pth) | [train_log](https://github.com/wgcban/mix-bt/releases/download/v1.0.0/q03u2xjz_train.txt) | [checkpoint_00atvp6x.pth](https://github.com/wgcban/mix-bt/releases/download/v1.0.0/checkpoint_00atvp6x.pth)  | [val_log](https://github.com/wgcban/mix-bt/releases/download/v1.0.0/00atvp6x_val.txt) | 72.0 |
 
+Note: We are currently running the final version of Mixed Barlow Twins, which is being trained for 1000 epochs. We will update the pre-trained model and performance soon. Stay tuned!!!
+
 ## 4 Training/Val Logs
 
 Logs are available on `wandb` and can access via following links:
