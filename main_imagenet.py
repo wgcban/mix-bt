@@ -255,22 +255,6 @@ class BarlowTwins(nn.Module):
         # normalization layer for the representations z1 and z2
         # self.bn = nn.BatchNorm1d(sizes[-1], affine=False)
 
-    # def forward(self, y1, y2):
-    #     z1 = self.projector(self.backbone(y1))
-    #     z2 = self.projector(self.backbone(y2))
-
-    #     # empirical cross-correlation matrix
-    #     c = self.bn(z1).T @ self.bn(z2)
-
-    #     # sum the cross-correlation matrix between all gpus
-    #     c.div_(self.args.batch_size)
-    #     torch.distributed.all_reduce(c)
-
-    #     on_diag = torch.diagonal(c).add_(-1).pow_(2).sum()
-    #     off_diag = off_diagonal(c).pow_(2).sum()
-    #     loss = on_diag + self.args.lambd * off_diag
-    #     return loss
-
     def forward(self, y1, y2, is_mixup):
         batch_size = y1.shape[0]
 
@@ -295,33 +279,7 @@ class BarlowTwins(nn.Module):
 
         if is_mixup:
             ##############################################
-            ### mixup regularization: Implementation 1 ###
-            ##############################################
-            
-            # index = torch.randperm(batch_size).cuda(non_blocking=True)
-            # alpha = np.random.beta(1.0, 1.0)
-            # ym = alpha * y1 + (1. - alpha) * y2[index, :]
-            # zm = self.projector(self.backbone(ym))
-
-            # # normilization
-            # zm = (zm - zm.mean(dim=0)) / zm.std(dim=0)
-
-            # # cc
-            # cc_m_1 = zm.T @ z1
-            # cc_m_1.div_(batch_size)
-            # cc_m_1_gt = alpha*(z1.T @ z1) + (1.-alpha)*(z2[index,:].T @ z1)
-            # cc_m_1_gt.div_(batch_size)
-
-            # cc_m_2 = zm.T @ z2
-            # cc_m_2.div_(batch_size)
-            # cc_m_2_gt = alpha*(z2.T @ z2) + (1.-alpha)*(z2[index,:].T @ z2)
-            # cc_m_2_gt.div_(batch_size)
-
-            # # mixup reg. loss
-            # lossm = 0.5*self.args.lambd*((cc_m_1-cc_m_1_gt).pow_(2).sum() + (cc_m_2-cc_m_2_gt).pow_(2).sum())
-            
-            ##############################################
-            ### mixup regularization: Implementation 2 ###
+            #########    mixup regularization     ########
             ##############################################
             index = torch.randperm(batch_size).cuda(non_blocking=True)
             alpha = np.random.beta(1.0, 1.0)
