@@ -30,7 +30,7 @@ parser.add_argument('--workers', default=8, type=int, metavar='N',
                     help='number of data loader workers')
 parser.add_argument('--epochs', default=300, type=int, metavar='N',
                     help='number of total epochs to run')
-parser.add_argument('--batch-size', default=512, type=int, metavar='N',
+parser.add_argument('--batch-size', default=1024, type=int, metavar='N',
                     help='mini-batch size')
 parser.add_argument('--learning-rate-weights', default=0.2, type=float, metavar='LR',
                     help='base learning rate for weights')
@@ -46,9 +46,9 @@ parser.add_argument('--print-freq', default=1, type=int, metavar='N',
                     help='print frequency')
 parser.add_argument('--checkpoint-dir', default='/mnt/store/wbandar1/projects/ssl-aug-artifacts/', type=Path,
                     metavar='DIR', help='path to checkpoint directory')
-parser.add_argument('--is_mixup', default='false', type=str,
+parser.add_argument('--is_mixup', default='true', type=str,
                     metavar='L', help='mixup regularization', choices=['true', 'false'])
-parser.add_argument('--lambda_mixup', default=0.1, type=float, metavar='L',
+parser.add_argument('--lambda_mixup', default=1.0, type=float, metavar='L',
                     help='Hyperparamter for the regularization loss')
 
 def main():
