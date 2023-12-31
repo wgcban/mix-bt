@@ -161,6 +161,7 @@ Download the pre-trained models from [GitHub (Releases v1.0.0)](https://github.c
 
 ## 4 Training/Val Logs
 
+### 3.1 Pre-trianing for 300 epochs
 Logs are available on `wandb` and can access via following links:
 - imagenet pre-training: https://api.wandb.ai/links/cha-yas/5olb2sar
 - imagenet linear probing: https://api.wandb.ai/links/cha-yas/9tb0ksfp
@@ -168,6 +169,10 @@ Logs are available on `wandb` and can access via following links:
 Here we provide some training and validation (linear probing) statistics for Barlow Twins *vs.* Mixed Barlow Twins with `ResNet-50` backbone on `ImageNet`:
 
 <img src="figs/in-loss-bt.png" width="256"/> <img src="figs/in-loss-reg.png" width="256"/> <img src="figs/in-linear.png" width="256"/> 
+
+### 3.1 Pre-trianing for 1000 epochs
+We also provide trianing-val statistics for our pre-trained model for 1000 epochs.
+<img src="figs/in-loss-bt-1000e.png" width="256"/> <img src="figs/in-loss-reg-1000e.png" width="256"/> <img src="figs/in-linear-1000e.png" width="256"/> 
 
 ## 5 Disclaimer
 A large portion of the code is from [Barlow Twins HSIC](https://github.com/yaohungt/Barlow-Twins-HSIC) (for experiments on small datasets: `CIFAR-10`, `CIFAR-100`, `TinyImageNet`, and `STL-10`) and official implementation of Barlow Twins [here](https://github.com/facebookresearch/barlowtwins) (for experiments on `ImageNet`), which is a great resource for academic development.
