@@ -174,6 +174,8 @@ Here we provide some training and validation (linear probing) statistics for Bar
 We also provide trianing-val statistics for our pre-trained model for 1000 epochs.
 <img src="figs/in-loss-bt-1000e.png" width="256"/> <img src="figs/in-loss-reg-1000e.png" width="256"/> <img src="figs/in-linear-1000e.png" width="256"/> 
 
+:fire: Access pre-training statistcis on wandb: [`wandb-imagenet-pretrain`](https://wandb.ai/cha-yas/Barlow-Twins-MixUp-ImageNet?workspace=user-wgcban)
+
 ## 5 Disclaimer
 A large portion of the code is from [Barlow Twins HSIC](https://github.com/yaohungt/Barlow-Twins-HSIC) (for experiments on small datasets: `CIFAR-10`, `CIFAR-100`, `TinyImageNet`, and `STL-10`) and official implementation of Barlow Twins [here](https://github.com/facebookresearch/barlowtwins) (for experiments on `ImageNet`), which is a great resource for academic development.
 
